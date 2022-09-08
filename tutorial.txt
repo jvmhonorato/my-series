@@ -1,0 +1,6 @@
+1: npm init
+
+2: npm install express mongoose body-parser ejs
+
+3: configurar o main index.js como server connect
+
