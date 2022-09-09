@@ -1,6 +1,14 @@
+OBS:USE ORM MONGOOSE
 1: npm init
 
 2: npm install express mongoose body-parser ejs
 
 3: configurar o main index.js como server connect
 
+4: criar pasta public e tranferir arquivos img, css js vetor pra la
+
+5: criar pasta views com index.ejs e partials com foote e header
+
+6: por '/' na frente de todos os src, e renomear os links com /sobre, /contato e etc para linka com o arquivo view.ejs determinado
+
+7:

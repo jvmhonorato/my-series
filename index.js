@@ -1,4 +1,6 @@
+
 const bodyParser = require('body-parser')
+const path = require('path')
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
@@ -21,9 +23,8 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine','ejs')
 
 //Navigator
-app.get('/', (req,res) => {
-    res.send('ok')
-})
+app.get('/', (req,res) => res.render('index'))
+app.get('/sobre', (req,res) => res.render('sobre'))
 
 
 //SERVER CONNECT
