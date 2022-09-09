@@ -1,4 +1,4 @@
-<%- include('./partials/header')%>
+<%- include('../partials/header')%>
 
    
 
@@ -6,15 +6,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Sobre</h2>
+            <h2>Series</h2>
             <p class="lead">Uma headline aqui</p>
             <ul>
-              
-              <li>Uma lista aqui</li>
+              <% series.forEach( serie  =>  { %>
+                <li> <%= serie.name %> <%= serie.status %> </li>
+                
+              <%  })  %>
+             
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <%- include('./partials/footer')%>
+    <%- include('../partials/footer')%>

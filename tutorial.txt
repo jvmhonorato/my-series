@@ -16,3 +16,9 @@ OBS:USE ORM MONGOOSE
 8:criar routes/pages.js pra traçar a rota da aplicação
 
 9: resumo: criar função em controllers/pages.js depois traçar as rotas em routes/pages.js e por ultimo chamar em main index.js: app.use('/', pages)
+
+10: criar models/serie.js passar a configuração 
+
+11: tracar a rota de controllers/series.js pra routes/series.js epor ultimo em main index.js
+
+12: criar em views/series/index.js

@@ -4,6 +4,7 @@ const path = require('path')
 const express = require('express')
 const app = express()
 const pages = require('./routes/pages')
+const series = require('./routes/series')
 const port = process.env.PORT || 3000
 const mongo = process.env.MONGODB || 'mongodb://localhost/my-series'
 
@@ -25,6 +26,7 @@ app.set('view engine','ejs')
 
 //Navigator
 app.use('/', pages)
+app.use('/series', series)
 
 
 
