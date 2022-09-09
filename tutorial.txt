@@ -11,4 +11,8 @@ OBS:USE ORM MONGOOSE
 
 6: por '/' na frente de todos os src, e renomear os links com /sobre, /contato e etc para linka com o arquivo view.ejs determinado
 
-7:
+7:criar controllers/pages.js pra gerenciar a logica da aplicação+.
+
+8:criar routes/pages.js pra traçar a rota da aplicação
+
+9: resumo: criar função em controllers/pages.js depois traçar as rotas em routes/pages.js e por ultimo chamar em main index.js: app.use('/', pages)
