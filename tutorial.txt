@@ -25,4 +25,8 @@ OBS:USE ORM MONGOOSE
 
 13:  a instãncia  Serie que vem de models/serie.js transferimos pra  routes/series.js e no controllers passamos dinãmicamente no parãmetro {Serie}, dessa foma Series em rotes será com uma ligação de controllers pra index
 
-14: Em routes com a instancia de models em Series criamos um objeto models e passamos a instancias Series dentro dele, em seguida passammos o objeto models  na rota com o metodo .bind()
+14: Em routes com a instancia de models em Series criamos um objeto models e passamos a instancias Series dentro dele, em seguida passamos o objeto models  na rota com o metodo .bind()
+
+15: criar o excluir <a> em views/series/index.ejs, depois passar traçar a rota em routes/series.js e por ultimo criamos o modulo excluir em controllers/seris.js
+
+16:
