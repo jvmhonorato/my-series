@@ -22,3 +22,7 @@ OBS:USE ORM MONGOOSE
 11: tracar a rota de controllers/series.js pra routes/series.js epor ultimo em main index.js
 
 12: criar em views/series/index.js
+
+13:  a instãncia  Serie que vem de models/serie.js transferimos pra  routes/series.js e no controllers passamos dinãmicamente no parãmetro {Serie}, dessa foma Series em rotes será com uma ligação de controllers pra index
+
+14: Em routes com a instancia de models em Series criamos um objeto models e passamos a instancias Series dentro dele, em seguida passammos o objeto models  na rota com o metodo .bind()
