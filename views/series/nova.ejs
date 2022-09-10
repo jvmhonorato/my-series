@@ -13,6 +13,9 @@
                     <label for="name">Nome da serie</label>
                     <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="namelHelp" placeholder="Informe o nome da serie">
                     <small id="nameHelp" class="form-text text-muted">Nome da serie a ser salva.</small>
+                    <% if(errors && errors.indexOf('name')>=0){ %>
+                      <small id="nameHelp" class="form-text text-muted">Por favor, informe o nome da serie</small>
+                      <% } %>
                   </div>
                   <div class="form-group">
                     <label for="status">Status</label>

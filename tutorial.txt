@@ -27,6 +27,9 @@ OBS:USE ORM MONGOOSE
 
 14: Em routes com a instancia de models em Series criamos um objeto models e passamos a instancias Series dentro dele, em seguida passamos o objeto models  na rota com o metodo .bind()
 
-15: criar o excluir <a> em views/series/index.ejs, depois passar traçar a rota em routes/series.js e por ultimo criamos o modulo excluir em controllers/seris.js
+15: criar o excluir <a> em views/series/index.ejs, depois passar traçar a rota em routes/series.js e por ultimo criamos o modulo excluir em controllers/series.js
 
-16:
+VALIDAÕES:  
+16:OBS: adicionar em models.serie.js o required. pra obrigar preenchimento do campo nome, em seguida em controllers/series.js inserimos um try/catch no modulo novaProcess e editProcess pra renderizar caso seja atualizado ou manter na página caso der erro.OBS: passar um 'erros: []' pra deixar como padrão pois depois que botamos uma condicional de renderização caso haja erro   a app espera um errors
+
+17:depois chamamos um condicional em nova.ejs e editar.ejs pra caso o campo de series fique em branco ele renderizar uma mensagem
