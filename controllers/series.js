@@ -1,8 +1,13 @@
+const labels = [
+    {id: 'to-watch', name: 'Para assistir'},
+    {id: 'watched', name: 'Assistido'},
+    {id: 'watching', name:'Assistindo'}
+]
 
 const index = ({Serie},req,res)=> {
     Serie.find({},(err, docs) => {
        
-        res.render('series/index', { series: docs})
+        res.render('series/index', { series: docs, labels})
     } )
     
 }
@@ -44,11 +49,7 @@ const editarProcess =  ({Serie},req,res) => {
 
 
 const editarForm = ({Serie},req,res) => {
-    const labels = [
-        {id: 'to-watch', name: 'Para assistir'},
-        {id: 'watched', name: 'Assistido'},
-        {id: 'watching', name:'Assistindo'}
-    ]
+
     Serie.findOne({_id: req.params.id}, (err, serie)=>{
         res.render('series/editar', {serie, labels})
     })
