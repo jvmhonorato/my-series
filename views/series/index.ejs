@@ -12,7 +12,8 @@
               <% series.forEach( serie  =>  { %>
                    <tr>
                      <td>
-                      <%= serie.name %>
+                     
+                      <a href="/series/info/<%= serie._id %>"> <%= serie.name %></a>
                     </td> 
                      <td>
                      <span class="badge badge-secundary"><%= labels.filter(label => label.id === serie.status)[0].name %></span>

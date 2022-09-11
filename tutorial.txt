@@ -33,3 +33,10 @@ VALIDAÕES:
 16:OBS: adicionar em models.serie.js o required. pra obrigar preenchimento do campo nome, em seguida em controllers/series.js inserimos um try/catch no modulo novaProcess e editProcess pra renderizar caso seja atualizado ou manter na página caso der erro.OBS: passar um 'erros: []' pra deixar como padrão pois depois que botamos uma condicional de renderização caso haja erro   a app espera um errors
 
 17:depois chamamos um condicional em nova.ejs e editar.ejs pra caso o campo de series fique em branco ele renderizar uma mensagem
+
+COMENTARIOS
+18: em series/index.ejs no no <%= series.name%> passamos um <a>com link pra series/info PARA chamar a pagina de informções da serie
+
+19:Depois crimaos em controllers o modulo info em seguida passamos ele atraves da routes/series.js e por ultim tratamos o front end em info.ejs
+
+20: Criar tambem o modulo addComentario onde ele faz um update pegando o req.params.id e faz um push usando o comments como parâmetro e redirecionadno pra mesma pagina ja com as informações
